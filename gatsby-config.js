@@ -5,7 +5,9 @@
  */
 
 module.exports = {
-  /* Your site config here */
+
+  pathPrefix: "/a-cards-repository",
+
   plugins: [
     `gatsby-plugin-typescript`,
     `gatsby-plugin-sass`
