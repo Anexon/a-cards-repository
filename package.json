@@ -12,7 +12,7 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
-    "gh-deploy": "gatsby build && gh-pages -d public -b master"
+    "gh-deploy": "gatsby build && gh-pages -d public -b gh-page"
   },
   "dependencies": {
     "gatsby": "^2.24.61",
@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "gatsby-plugin-typescript": "^2.4.20",
-    "gh-pages": "^3.1.0",
+    "gh-pages": "^3.1.0", 
     "prettier": "2.1.1"
   },
   "repository": {
