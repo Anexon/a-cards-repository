@@ -1,0 +1,74 @@
+[
+  {
+    "id": "S-01",
+    "name": "Ataque Letal",
+    "description": "Hace 20 de daño",
+    "type": "technique",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Damage"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  },
+  {
+    "id": "T-01",
+    "name": "Intercambio fugaz",
+    "description": "Cambia la unidad activa por una del banquillo",
+    "type": "tactic",
+    "imageUrl": "images/card-01.jpg",
+    "tags": ["Mage", "Interchange"]
+  }
+]
