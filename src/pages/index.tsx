@@ -5,13 +5,16 @@ import CardList from "../components/CardList/CardList"
 import NavBar from "../components/NavBar/NavBar"
 
 export default function Home() {
-
   return (
-    <>
-      <FirebaseContext.Consumer>
-        {(firebase: any) => <NavBar firebase={firebase}></NavBar>}
-      </FirebaseContext.Consumer>
-      <CardList></CardList>
-    </>
+    <FirebaseContext.Consumer>
+      {(firebase: any) => {
+        return (
+          <>
+            <NavBar firebase={firebase}></NavBar>
+            <CardList firebase={firebase}></CardList>
+          </>
+        )
+      }}
+    </FirebaseContext.Consumer>
   )
 }

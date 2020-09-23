@@ -1,4 +1,5 @@
 import "firebase/auth"
+import "firebase/firestore"
 
 const firebaseConfig = {
   apiKey: "AIzaSyCSSe12Jk4ktd_tS1joyjGtETx7fp4jXlY",
@@ -13,32 +14,46 @@ const firebaseConfig = {
 
 export class Firebase {
   constructor(app) {
-    app.initializeApp(firebaseConfig)
-    this.auth = app.auth()
-    this.googleAuthProvider = new app.auth.GoogleAuthProvider()
+    let firebase = app.initializeApp(firebaseConfig);
+    this.auth = app.auth();
+    this.googleAuthProvider = new app.auth.GoogleAuthProvider();
+    this.database = firebase.firestore();
+  }
+
+  async getCards() {
+    return this.database.collection("cards").get().then(snapshot => {
+      let cards = [];
+      snapshot.forEach(doc =>
+        cards.push({
+          fid: doc.id,
+          ...doc.data()
+        })
+      );
+
+      return cards.sort((a, b) => {
+        return a.id > b.id ? 1 : -1
+      });
+    });
   }
 
   loginWithGoogle() {
-    this.auth
+    return this.auth
       .signInWithPopup(this.googleAuthProvider)
       .then(function (result) {
         // This gives you a Google Access Token. You can use it to access the Google API.
         var token = result.credential.accessToken
         // The signed-in user info.
         var user = result.user
-        // ...
-        console.log(user, token)
+
+        return {
+          displayName: user.displayName
+        }
       })
-      .catch(function (error) {
-        // Handle Errors here.
-        var errorCode = error.code
-        var errorMessage = error.message
-        // The email of the user's account used.
-        var email = error.email
-        // The firebase.auth.AuthCredential type that was used.
-        var credential = error.credential
-        // ...
+      .catch(function () {
       })
+  }
+  logOut() {
+    return this.auth.signOut();
   }
 }
 

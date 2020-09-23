@@ -6,6 +6,7 @@
   width: 300px;
   border: 1px solid black;
   border-radius: 15px;
+  background-color: white;
 
   .title-container {
     display: flex;
@@ -46,7 +47,7 @@
     margin: 0 12px 12px 12px;
 
     .description {
-      width: 100%;
+      width: calc(100% - 16px);
       padding: 8px;
       margin: 0px;
     }

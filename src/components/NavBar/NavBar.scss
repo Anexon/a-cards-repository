@@ -1,12 +1,27 @@
 .nav-container{
     display: flex;
     min-height: 50px;
-    background: red;
+    background: #2c3e50;
     align-items: center;
     padding: 12px;
     width: calc(100% - 24px);
     h1{
+        color: white;
+        font-weight: bold;
         flex-grow: 1;
         margin: 0px;
+    }
+
+    .options{
+        margin-right: 24px;
+        a{
+            cursor: pointer;
+            color: white;
+            margin: 0 16px 0 16px;
+        }
+
+        a:last-child{
+            margin: 0 0 0 16px;
+        }
     }
 }
