@@ -1,15 +1,17 @@
 import React from "react"
-import Card from "../components/card"
 import "./index.scss"
+import { FirebaseContext } from "../components/Firebase"
+import CardList from "../components/CardList/CardList"
+import NavBar from "../components/NavBar/NavBar"
 
 export default function Home() {
-  var json = require("../../static/cards.json")
-  console.log(json)
+
   return (
-    <div className="card-list">
-      {json.map((card: any) => {
-        return <Card cardInfo={card}></Card>
-      })}
-    </div>
+    <>
+      <FirebaseContext.Consumer>
+        {(firebase: any) => <NavBar firebase={firebase}></NavBar>}
+      </FirebaseContext.Consumer>
+      <CardList></CardList>
+    </>
   )
 }

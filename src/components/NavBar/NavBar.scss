@@ -1,0 +1,12 @@
+.nav-container{
+    display: flex;
+    min-height: 50px;
+    background: red;
+    align-items: center;
+    padding: 12px;
+    width: calc(100% - 24px);
+    h1{
+        flex-grow: 1;
+        margin: 0px;
+    }
+}
