@@ -1,4 +1,5 @@
-import getFirebase, { Firebase } from './firebase'
+import getFirebase from './firebase'
+import Firebase from './firebase'
 import FirebaseProvider from './firebase-context-provider'
 import FirebaseContext from './firebase-context'
 

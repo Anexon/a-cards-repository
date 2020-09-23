@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./NavBar.scss";
-import { Firebase } from "../Firebase";
+import { Firebase } from "../Firebase/firebase";
 import PropTypes from "prop-types";
 
 
