@@ -19,13 +19,7 @@ var db = firebase.firestore();
 var cards = require("../static/cards.json");
 
 cards.forEach(function (obj) {
-    db.collection("cards").add({
-        id: obj.id,
-        name: obj.name,
-        description: obj.description,
-        imageUrl: obj.price,
-        type: obj.type
-    }).then(function (docRef) {
+    db.collection("cards").add(obj).then(function (docRef) {
         console.log("Document written with ID: ", docRef.id);
     })
         .catch(function (error) {
