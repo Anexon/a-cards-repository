@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/pages/404.tsx"],"names":["NotFound"],"mappings":"6FAAA,wEAEe,SAASA,IACtB,OAAO","file":"component---src-pages-404-tsx-0e4003437c870b67276d.js","sourcesContent":["import React from \"react\"\r\n\r\nexport default function NotFound() {\r\n  return <div>Oups, content not found!</div>\r\n}\r\n"],"sourceRoot":""}
