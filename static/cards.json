@@ -4,7 +4,7 @@
     "name": "Rabia Incontenida",
     "description": "Intercambia la unidad activa aliada por una del banquillo aliado. La unidad que entra pierde 40PV.",
     "type": "tactica",
-    "imageUrl": "images/card-01.jpg",
+    "imageUrl": "images/rabia-incontenida.jpg",
     "tags": ["Interchange", "Self-harm"]
   },
   {
@@ -12,7 +12,7 @@
     "name": "Ultimo recurso",
     "description": "La unidad objetivo del banquillo gana 40PV y pasa a ser la unidad activa. No puedes jugar mas tacticas este turno. Solo puede ser jugada si es la primera carta que juegas este turno. (Quiza del turno, no solo tu).",
     "type": "tactic",
-    "imageUrl": "images/card-01.jpg",
+    "imageUrl": "images/ultimo-recurso.png",
     "tags": ["Interchange", "Healing", "Turn", "Mute"]
   },
   {
@@ -20,7 +20,7 @@
     "name": "Angel guardian",
     "description": "Interrupcion: Fase de daño. Redirige las dos proximas tecnicas hacia una unidad aliada del banquillo.",
     "type": "tactic",
-    "imageUrl": "images/card-01.jpg",
+    "imageUrl": "images/angel-guardian.jpg",
     "tags": ["Interruption", "Damagephase", "Redirect"]
   },
   {
@@ -28,7 +28,7 @@
     "name": "Ultimo aliento",
     "description": "Interrupcion: Daño letal. La unidad sobrevive con 10PV.",
     "type": "tactic",
-    "imageUrl": "images/card-01.jpg",
+    "imageUrl": "images/ultimo-aliento.jpg",
     "tags": ["Interruption", "Lethaldamage", "Survive"]
   },
   {
