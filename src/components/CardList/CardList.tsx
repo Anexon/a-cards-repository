@@ -1,6 +1,6 @@
-import React, { useState, useEffect } from "react"
+import React, { useEffect, useState } from "react"
 import Card from "../Card/Card"
-import { Firebase } from "../Firebase";
+import { Firebase } from "../Firebase/firebase";
 import PropTypes from "prop-types";
 import "./CardList.scss"
 
@@ -9,9 +9,9 @@ export default function CardList(props: {
 }) {
   const [cards, setCards] = useState([]);
   const [isLoading, setIsloading] = useState(true);
-
+  // let cards = require('../../../static/cards.json')
   useEffect(() => {
-    props.firebase?.getCards().then(cards => {
+    props.firebase?.getCards().then((cards: any) => {
       setIsloading(false);
       setCards(cards);
     });

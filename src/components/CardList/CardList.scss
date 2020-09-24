@@ -1,6 +1,8 @@
 .card-list {
     display: flex;
     flex-wrap: wrap;
+    max-width: calc(300px * 5 + 12px * 12);
+    margin: auto;
   
     > * {
       margin: 12px;

@@ -1,6 +1,6 @@
 import React from "react"
 import "./index.scss"
-import { FirebaseContext } from "../components/Firebase"
+import FirebaseContext from "../components/Firebase/FirebaseContext"
 import CardList from "../components/CardList/CardList"
 import NavBar from "../components/NavBar/NavBar"
 

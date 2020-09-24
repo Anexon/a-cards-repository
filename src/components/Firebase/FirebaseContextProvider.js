@@ -1,7 +1,7 @@
 import React, { useState } from "react"
 import app from "firebase/app"
 import getFirebase from "./firebase"
-import FirebaseContext from "./firebase-context"
+import FirebaseContext from "./FirebaseContext"
 
 export default function FirebaseProvider(props) {
   const [firebase, setFirebase] = useState()

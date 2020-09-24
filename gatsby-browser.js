@@ -1,6 +1,6 @@
 import React from "react"
 import "./src/styles/global.scss"
-import FirebaseProvider from "./src/components/Firebase/firebase-context-provider"
+import FirebaseProvider from "./src/components/Firebase/FirebaseContextProvider"
 
 
 export const wrapRootElement = ({ element }) => {

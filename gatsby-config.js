@@ -7,6 +7,7 @@
 module.exports = {
 
   pathPrefix: "/a-cards-repository",
+  assetPrefix: "/a-cards-repository",
 
   plugins: [
     `gatsby-plugin-typescript`,

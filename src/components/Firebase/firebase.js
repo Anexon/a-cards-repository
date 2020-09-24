@@ -20,7 +20,7 @@ export class Firebase {
     this.database = firebase.firestore();
   }
 
-  async getCards() {
+  getCards() {
     return this.database.collection("cards").get().then(snapshot => {
       let cards = [];
       snapshot.forEach(doc =>
@@ -57,14 +57,14 @@ export class Firebase {
   }
 }
 
-let firebase
+let firebase;
 
 function getFirebase(app, auth, database) {
   if (!firebase) {
     firebase = new Firebase(app, auth, database)
   }
 
-  return firebase
+  return firebase;
 }
 
-export default getFirebase
+export default getFirebase;
